@@ -26,7 +26,7 @@ var id = req.query.n;   //Funkar
 Skriv en route
 ```javascript
 app.get('/api', function(req, res){
-    res.send('<html><body><h1>Johan</h1></body></html>');
+    res.send('<html><body><h1>Johan ' + n + '</h1><form><input type="text"></input><button></button></form></body></html>');
 });
 ``` 
 
