@@ -8,7 +8,7 @@ var express = require('express');
 var app = express();
 ```
 
-Läsning via HTTP POST används body-parser
+Utläsning av HTTP POST används body-parser
 
 ```javascript
 var bodyParser = require('body-parser');
@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 var n = req.body.n;     //funkar
 ```
 
-Läsning via HTTP GET kräver ingen ytterligre import
+Utläsning av HTTP GET kräver ingen ytterligre import
 
 ```javascript 
 var id = req.query.n;   //Funkar
