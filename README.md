@@ -1,6 +1,8 @@
 # expressjs
 Det mesta om express.js
 
+## Minimalt exempel
+
 Importera och instantiera express
 
 ```javascript
@@ -33,4 +35,14 @@ app.get('/api', function(req, res){
 Starta läsning på porten
 ```javascript
 app.listen(3000);
+```
+
+## Middleware
+Middleware kallas de funktioner som ligger mellan en applications request (req)- och response (res) cykel. 
+
+```javascript
+app.use(function (req, resp, next) {
+    console.log('Tid: ', Date.now())
+    next()
+})
 ```
