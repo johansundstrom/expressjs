@@ -1,4 +1,4 @@
-# expressjs
+# Express JS
 Det mesta om express.js
 
 ## Minimalt exempel
